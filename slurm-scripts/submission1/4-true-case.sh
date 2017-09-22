@@ -6,8 +6,8 @@
 
 #SBATCH -N 1
 #SBATCH --ntasks-per-node=1
-#SBATCH -t 01:00:00
-#SBATCH --mem=8G
+#SBATCH -t 24:00:00
+#SBATCH --mem=16G
 
 
 # Training the true-casing models for both files

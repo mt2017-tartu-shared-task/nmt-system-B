@@ -6,8 +6,8 @@
 
 #SBATCH -N 1
 #SBATCH --ntasks-per-node=1
-#SBATCH -t 01:00:00
-#SBATCH --mem=8G
+#SBATCH -t 03:00:00
+#SBATCH --mem=12G
 
 # Tokenize
 
