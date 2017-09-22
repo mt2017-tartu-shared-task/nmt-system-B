@@ -7,6 +7,7 @@
 #SBATCH -N 1
 #SBATCH --ntasks-per-node=1
 #SBATCH -t 01:00:00
+#SBATCH --mem=8G
 
 # tab-join and shuffle et and en corpora
 paste raw-all.{et,en} | shuf > mixed-data.both
