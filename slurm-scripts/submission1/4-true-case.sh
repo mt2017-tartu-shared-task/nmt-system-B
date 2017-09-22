@@ -11,11 +11,9 @@
 
 
 # Training the true-casing models for both files
-../OpenNMT-py/tools/train-truecaser.perl --model en-truecase.mdl --
-corpus tok-train.en
+../OpenNMT-py/tools/train-truecaser.perl --model en-truecase.mdl --corpus tok-train.en
 
-../OpenNMT-py/tools/train-truecaser.perl --model et-truecase.mdl --
-corpus tok-train.et
+../OpenNMT-py/tools/train-truecaser.perl --model et-truecase.mdl --corpus tok-train.et
 
 echo "True-casing models trained"
 
