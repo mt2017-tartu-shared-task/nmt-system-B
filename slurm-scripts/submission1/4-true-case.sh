@@ -2,7 +2,7 @@
 
 # The location of this file is in data/ folder where raw-all folder is.
 
-#SBATCH -J quidditch1_tiny12
+#SBATCH -J quidditch1_tiny14
 
 #SBATCH -N 1
 #SBATCH --ntasks-per-node=1

@@ -2,7 +2,7 @@
 
 # The location of this file is in data/ folder where raw-all folder is.
 
-#SBATCH -J quidditch1_tiny13
+#SBATCH -J quidditch1_tiny15
 
 #SBATCH -N 1
 #SBATCH --ntasks-per-node=1
@@ -10,11 +10,6 @@
 #SBATCH --mem=8G
 
 # Tokenize
-
-for f in {test,dev,train}.{en,et}
-do
-	../OpenNMT-py/tools/tokenizer.perl < $f > tok-$f
-	echo $f done
-done
+../OpenNMT-py/tools/clean-corpus-n.perl tc-tok-train en et cleaned-tc-tok-train 1 100
 
 echo "Job finished"
