@@ -10,3 +10,4 @@
 
 cat raw-all/*.en > raw-all.en
 cat raw-all/*.et > raw-all.et
+echo "job finished"
