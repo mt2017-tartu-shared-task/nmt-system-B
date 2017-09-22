@@ -7,6 +7,8 @@
 #SBATCH -N 1
 #SBATCH --ntasks-per-node=1
 #SBATCH -t 01:00:00
+#SBATCH --mem=8G
+
 
 # Training the true-casing models for both files
 ../OpenNMT-py/tools/train-truecaser.perl --model en-truecase.mdl --
