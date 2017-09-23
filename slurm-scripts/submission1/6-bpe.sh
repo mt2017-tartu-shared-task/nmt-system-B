@@ -11,18 +11,18 @@
 
 
 # First learn BPE (dictionary size 100k):
-cat cleaned-tc-tok-train.et cleaned-tc-tok-train.en | ../OpenNMTpy/tools/subword-nmt/learn_bpe.py -s 100000 > eten.bpe
+cat cleaned-tc-tok-train.et cleaned-tc-tok-train.en | ../OpenNMT-py/tools/subword-nmt/learn_bpe.py -s 100000 > eten.bpe
 
 echo "BPE learned"
 # Apply BPE
 
 for lang in et en
  do
-# apply to train
-  ../OpenNMTpy/tools/subword-nmt/apply_bpe.py -c eten.bpe < cleaned-tc-tok-train.$lang > bpe.cleaned-tc-tok-train.$lang
-# apply to dev
-  ../OpenNMTpy/tools/subword-nmt/apply_bpe.py -c eten.bpe < tc-tok-dev.$lang > bpe.tc-tok-dev.$lang
-# apply to test
+  # apply to train
+  ../OpenNMT-py/tools/subword-nmt/apply_bpe.py -c eten.bpe < cleaned-tc-tok-train.$lang > bpe.cleaned-tc-tok-train.$lang
+  # apply to dev
+  ../OpenNMT-py/tools/subword-nmt/apply_bpe.py -c eten.bpe < tc-tok-dev.$lang > bpe.tc-tok-dev.$lang
+  # apply to test
   ../subword-nmt/apply_bpe.py -c eten.bpe < tc-tok-test.$lang > bpe.tc-tok-test.$lang
  done
 
