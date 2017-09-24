@@ -23,7 +23,7 @@ for lang in et en
   # apply to dev
   ../OpenNMT-py/tools/subword-nmt/apply_bpe.py -c eten.bpe < tc-tok-dev.$lang > bpe.tc-tok-dev.$lang
   # apply to test
-  ../subword-nmt/apply_bpe.py -c eten.bpe < tc-tok-test.$lang > bpe.tc-tok-test.$lang
+  ../OpenNMT-py/tools/subword-nmt/apply_bpe.py -c eten.bpe < tc-tok-test.$lang > bpe.tc-tok-test.$lang
  done
 
 echo "Job finished"
