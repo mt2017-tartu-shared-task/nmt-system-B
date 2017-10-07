@@ -6,7 +6,7 @@ TEAMNAME team: QuidditchChampions
  
 
 ## Our project board:
-
+![Alt text](./project_board_ms1.png?raw=true)
 
 
 ## This milestone tasks description:
