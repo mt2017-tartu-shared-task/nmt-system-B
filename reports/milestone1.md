@@ -19,7 +19,7 @@ Starting from raw data, we applied following preprocessing steps:
 * tokenization ([3-tokenize-data.sh](../slurm-scripts/submission1/3-tokenize-data.sh)): split all sentences into their tokens
 * true casing ([4-true-case.sh](../slurm-scripts/submission1/4-true-case.sh)): to benefit translation
 * remove strange and empty sentences ([5-filter-empy-strange-data.sh](../slurm-scripts/submission1/5-filter-empy-strange-data.sh)): removed 144706 sentences
-* BPE ([6-bpe.sh](../slurm-scripts/submission1/6-bpe.sh)): we used joint vocabulary of size 37963466
+* BPE ([6-bpe.sh](../slurm-scripts/submission1/6-bpe.sh)): we used joint vocabulary of size 30000
 * Preprocessing ([7-preprocess.sh](../slurm-scripts/submission1/7-preprocess.sh)): our preprocessing script had memory problems even with vocabulary size of 30000, so we ran it on GPU machine with 150GB RAM.
 
 We used [Moses](http://www.statmt.org/moses/) scripts to do basic preprocessing, and [BPE](https://github.com/rsennrich/subword-nmt) for the subword segmentation. 
@@ -31,7 +31,9 @@ We had trained our best model for ~7 days, 13 epochs. Development set perplexity
 ).
 
 ### Translating and Evaluating Results
-We performed an inference and got unpostprocessed English hyps file. 
+Following scripts were used to translate and evaluate the results: ([9-translate.sh](../slurm-scripts/submission1/9-translate.sh)) and ([10-evaluate.sh](../slurm-scripts/submission1/10-evaluate.sh)).
+
+We performed an inference and got unpostprocessed English hyps file ([hyps.en](../hyps/hyps.en)). 
 
 We used this file, processed reference file, and BLEU metric to evaluate the translation performance of our model, and got 32.70 points.
 
