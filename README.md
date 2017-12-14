@@ -1,10 +1,72 @@
-# nmt-system-B
+# __QuidditchChampions__ (Team B) In-class Machine Translation Shared Task 2017 Submission
+This repository is a result of our participation in the shared task.<br>
+We went through the process of building, analyzing, and improving the neural machine translation system.
 
-## Slurm scripts
-Slurm scripts are under the slurm-scripts folder sorted by submissions.
+Poster: [link]() // fill later
 
-Add index in front of slurm scripts, so its clearly understandable, which script to run first.
+The shared task was for Estonian-English language pair. 
+It included working with ~19.000.000 sentence pairs.
 
-Would be nice if indexes were aligned with task numbers in submissions.
+Shared task main page: [link](https://github.com/mt2017-tartu-shared-task) <br>
+Shared task on course page: [link](https://courses.cs.ut.ee/2017/MT/fall/Main/SharedTask)
 
-Also move the script into the right folder.
+Sections below summarize key milestones we went through.  
+
+##  Baseline system
+- Our baseline system was __Concrete one-sentence summary of the baseline system.__
+- As a result, we got __21.95__ BLEU points on the shared dev set.
+
+More details: [report1](https://github.com/mt2017-tartu-shared-task/nmt-system-B/blob/master/reports/milestone1.md)
+
+## Baseline system manual evaluation
+- We manually analyzed __60__ baseline translations. 
+- Or main observation was that __many words in sentences was not translated, especially in case of long sentences or after dot.__ // _put here only the problem(s) you actually put the most effort to_
+- Take a look at our the motivating example produced by baseline system:
+  1. Human: "__In this part of our website , you can find information on how the Parliament
+organises its work , through a system of specialised committees . the work of the
+European Parliament is important because in many policy areas , decisions on
+new European laws are made jointly by Parliament and the Council of Ministers ,
+which represents Member States .__"
+  2. Baseline: "__This part of our website will find information on how Parliament will organise its
+work through the various committees .__"
+
+More details: [report2](https://github.com/mt2017-tartu-shared-task/nmt-system-B/blob/master/reports/milestone2.pdf)
+
+## Final system
+- In order to address translation issues found after our manual evaluation we __descrie_the_modification_you_actually_included_in_your_final_system__. 
+- The trained system gave us __22.82__ BLEU points on the shared dev set that means __BIG__ over the baseline. 
+
+More details: [report3](https://github.com/mt2017-tartu-shared-task/nmt-system-B/blob/master/reports/milestone3.pdf) and [report4](https://github.com/mt2017-tartu-shared-task/nmt-system-B/blob/master/reports/milestone4.pdf)
+
+## Final system manual evaluation
+- Generally speaking, ____Just_your_general_feeling_about_the_translations_comparing_to_the_baseline (just a few words: got better, worse, same, etc; what about fluency).__
+- Lets now look at how does our Motivating example looks like with our final system:
+""__the_same_sentence_as_before_but_translated_with_your_final_system__", 
+- As a result you can see that __some_words_about_the_sentence_comparing_to_its_baseline_translation__
+
+Do not forget to check our poster: [__POSTER_LINK__]
+
+## What we also tried or wanted to try
+We also tried replacing all dots except last with special symbols and various beam sizes.<br>
+The dot replacement gave __22.29__ BLEU points on shared dev set and actually helped with translations. Below is translation with this approach on same example as seen previously
+ - Dot-model: This section of our website will find information on how Parliament operates
+its work through a system of various committees , and the work of the
+European Parliament is therefore important because decisions on new
+European laws are jointly made by the Parliament and the Council of
+Ministers .<br>
+
+Lastly, we wanted to try hyperparameter tuning, however the model did not converge. There were too many hyperparameter to tune to really find out which value suits what parameter is good. Furthermore we wanted to try POS-tags and ensembling multiple models.<br>
+
+
+## Final words
+- __1st_sentence: your_results_on_the_test_set_and_interpretation_(fill_later)__
+- __We had issues with models training rather long and that queue times were sometimes really long.__
+- __We learnt that in order to train great model, it needs much analysing, trying, evaluating.__
+
+
+## Team members:
+1. https://github.com/markus93
+2. https://github.com/crypotex
+3. https://github.com/imackerracher
+
+Project board: [link](https://github.com/mt2017-tartu-shared-task/nmt-system-B/projects/1)
