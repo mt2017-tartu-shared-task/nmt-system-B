@@ -38,7 +38,11 @@ work through the various committees .__"
 
   2. Baseline: "__All Community languages are equally important in the European Parliament : all Parliament's documents will be published in all the official languages of the European Union ( EU ) and each member of the European Parliament .__"
 
-- The baseline model left the part about "__has the right to speak...__" out.
+- The baseline model didn't translate the part about "__has the right to speak...__" out.
+
+- Some translations of the baseline model were not fluent. Example:
+  1. Human: The biggest forest owners ( state , local governments and some private forestry companies , owning thousands of hectares of forest areas ) can ensure a continuous process of production throughout the long forest management cycle .
+  2. Baseline: The largest forest owners ( the country , local authorities and some of the private sector companies to whom thousands of hectares of forest land ) can be guaranteed throughout the long term management cycle .
 
 More details: [report2](https://github.com/mt2017-tartu-shared-task/nmt-system-B/blob/master/reports/milestone2.pdf)
 
