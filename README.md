@@ -39,16 +39,16 @@ More details: [report2](https://github.com/mt2017-tartu-shared-task/nmt-system-B
 More details: [report3](https://github.com/mt2017-tartu-shared-task/nmt-system-B/blob/master/reports/milestone3.pdf) and [report4](https://github.com/mt2017-tartu-shared-task/nmt-system-B/blob/master/reports/milestone4.pdf)
 
 ## Final system manual evaluation
-- Generally speaking, ____Just_your_general_feeling_about_the_translations_comparing_to_the_baseline (just a few words: got better, worse, same, etc; what about fluency).__
+- Generally speaking, the majority of sentences are fluent and meaning preserving. Especially long sentences are translated much better than with the baseline model. 
 - Lets now look at how does our Motivating example looks like with our final system:
-""__the_same_sentence_as_before_but_translated_with_your_final_system__", 
-- As a result you can see that __some_words_about_the_sentence_comparing_to_its_baseline_translation__
+Final system: "Our website on this part will find information on how to organise its work by the various committees of the committees , and the work of the European Parliament is important because decisions on new European laws are jointly conducted by Parliament and the Council of Ministers , which represent the Member States in a number of policy areas ." 
+- As a result you can see that this translation is a great improvement over the translation of the baseline model. In the baseline translation only the first part of the input was included. Even though this is a very long sentence, the translation is fluent and adequate. There is only a minor flaw ("commitees of the commitees"), which can be expected from such a long sentence.
 
 Do not forget to check our poster: [__POSTER_LINK__]
 
 ## What we also tried or wanted to try
 We also tried replacing all dots except last with special symbols and various beam sizes.<br>
-The dot replacement gave __22.29__ BLEU points on shared dev set and actually helped with translations. Below is translation with this approach on same example as seen previously
+The dot replacement gave __22.29__ BLEU points on shared dev set and actually helped with translations. Below is a translation with this approach on same example as seen previously.
  - Dot-model: This section of our website will find information on how Parliament operates
 its work through a system of various committees , and the work of the
 European Parliament is therefore important because decisions on new
@@ -60,7 +60,7 @@ Lastly, we wanted to try hyperparameter tuning, however the model did not conver
 
 ## Final words
 - __1st_sentence: your_results_on_the_test_set_and_interpretation_(fill_later)__
-- __We had issues with models training rather long - especiallt for OpenNMT, Sockeye was much faster. Queue times were sometimes really long, especially at the ending part of semester.__
+- __We had issues with models training rather long - especially for OpenNMT, Sockeye was much faster. Queue times were sometimes really long, especially at the ending part of semester.__
 - __We learnt that in order to train great model, it needs much analysing, trying, evaluating.__
 
 
