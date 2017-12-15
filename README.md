@@ -22,7 +22,7 @@ More details: [report1](https://github.com/mt2017-tartu-shared-task/nmt-system-B
 
 ## Baseline system manual evaluation
 - We manually analyzed __60__ baseline translations. 
-- Or main observation was that __many words in sentences was not translated, especially in case of long sentences or after dot.__ // _put here only the problem(s) you actually put the most effort to_
+- Or main observation was that __many words in sentences were not translated, especially in case of long sentences or after dot.__ // _put here only the problem(s) you actually put the most effort to_
 - Take a look at our the motivating example produced by baseline system:
   1. Human: "__In this part of our website , you can find information on how the Parliament
 organises its work , through a system of specialised committees . the work of the
