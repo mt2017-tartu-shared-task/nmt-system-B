@@ -38,6 +38,8 @@ work through the various committees .__"
 
   2. Baseline: "__All Community languages are equally important in the European Parliament : all Parliament's documents will be published in all the official languages of the European Union ( EU ) and each member of the European Parliament .__"
 
+- The baseline model left the part about "__has the right to speak...__" out.
+
 More details: [report2](https://github.com/mt2017-tartu-shared-task/nmt-system-B/blob/master/reports/milestone2.pdf)
 
 ## Final system
