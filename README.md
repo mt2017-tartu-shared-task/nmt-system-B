@@ -16,6 +16,8 @@ Sections below summarize key milestones we went through.
 - Our baseline system was __Concrete one-sentence summary of the baseline system.__
 - As a result, we got __21.95__ BLEU points on the shared dev set.
 
+
+
 More details: [report1](https://github.com/mt2017-tartu-shared-task/nmt-system-B/blob/master/reports/milestone1.md)
 
 ## Baseline system manual evaluation
@@ -29,6 +31,12 @@ new European laws are made jointly by Parliament and the Council of Ministers ,
 which represents Member States .__"
   2. Baseline: "__This part of our website will find information on how Parliament will organise its
 work through the various committees .__"
+
+- The baseline model often didn't include whole parts of a sentence. Some examples:
+
+  1. Human: "__In the European Parliament , all Community languages are equally important : all parliamentary documents are published in all the official languages of the European Union ( EU ) and every MEP has the right to speak in the official language of his / her choice .__"
+
+  2. Baseline: "__All Community languages are equally important in the European Parliament : all Parliament's documents will be published in all the official languages of the European Union ( EU ) and each member of the European Parliament .__"
 
 More details: [report2](https://github.com/mt2017-tartu-shared-task/nmt-system-B/blob/master/reports/milestone2.pdf)
 
