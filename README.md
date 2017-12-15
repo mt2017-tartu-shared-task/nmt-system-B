@@ -33,7 +33,7 @@ work through the various committees .__"
 More details: [report2](https://github.com/mt2017-tartu-shared-task/nmt-system-B/blob/master/reports/milestone2.pdf)
 
 ## Final system
-- In order to address translation issues found after our manual evaluation we __descrie_the_modification_you_actually_included_in_your_final_system__. 
+- In order to address translation issues found after our manual evaluation we used Amazons sockeye library to train a system using context gates and instead of attention we used coverage, our bpe vocabulary size was 30k. __descrie_the_modification_you_actually_included_in_your_final_system__. 
 - The trained system gave us __22.82__ BLEU points on the shared dev set that means __BIG__ over the baseline. 
 
 More details: [report3](https://github.com/mt2017-tartu-shared-task/nmt-system-B/blob/master/reports/milestone3.pdf) and [report4](https://github.com/mt2017-tartu-shared-task/nmt-system-B/blob/master/reports/milestone4.pdf)
