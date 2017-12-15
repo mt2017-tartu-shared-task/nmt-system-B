@@ -60,7 +60,7 @@ Lastly, we wanted to try hyperparameter tuning, however the model did not conver
 
 ## Final words
 - __1st_sentence: your_results_on_the_test_set_and_interpretation_(fill_later)__
-- __We had issues with models training rather long and that queue times were sometimes really long.__
+- __We had issues with models training rather long - especiallt for OpenNMT, Sockeye was much faster. Queue times were sometimes really long, especially at the ending part of semester.__
 - __We learnt that in order to train great model, it needs much analysing, trying, evaluating.__
 
 
