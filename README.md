@@ -13,7 +13,7 @@ Shared task on course page: [link](https://courses.cs.ut.ee/2017/MT/fall/Main/Sh
 Sections below summarize key milestones we went through.  
 
 ##  Baseline system
-- Our baseline system was a default OpenNMT-py model with 2-layers of 500 LSTM hidden units using 30k BPE vocabulary.
+- Our baseline system was a default OpenNMT-py model with 2-layers of 500 LSTM hidden units for both encoder and decoder using 30k BPE vocabulary.
 - As a result, we got __21.95__ BLEU points on the shared dev set.
 
 
@@ -59,8 +59,10 @@ its work through a system of various committees , and the work of the
 European Parliament is therefore important because decisions on new
 European laws are jointly made by the Parliament and the Council of
 Ministers .<br>
+
 Also we tried 40k vocabulary for coverage + context to tackle some words not translated correctly (bigger voc should cover more words), however the results got worse based on manual evaluation and BLEU, last was only __21.31__.
-Finally we tried different beam sizes for translation and bigger beam size gave slightly better results based on manual evaluation and BLEU, which also increased by little.
+
+Finally we tried different beam sizes for translation. Bigger beam size gave slightly better results based on manual evaluation and BLEU, which also increased by little.
 
 Lastly, we wanted to try hyperparameter tuning, however the model did not converge. There were too many hyperparameter to tune to really find out which value suits what parameter is good. Furthermore we wanted to try POS-tags and ensembling multiple models.<br>
 
