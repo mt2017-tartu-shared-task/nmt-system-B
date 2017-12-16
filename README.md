@@ -13,7 +13,7 @@ Shared task on course page: [link](https://courses.cs.ut.ee/2017/MT/fall/Main/Sh
 Sections below summarize key milestones we went through.  
 
 ##  Baseline system
-- Our baseline system was a default OpenNMT-py model with 2-layers of 500 LSTM hidden units.
+- Our baseline system was a default OpenNMT-py model with 2-layers of 500 LSTM hidden units using 30k BPE vocabulary.
 - As a result, we got __21.95__ BLEU points on the shared dev set.
 
 
@@ -34,8 +34,8 @@ More details: [report1](https://github.com/mt2017-tartu-shared-task/nmt-system-B
 More details: [report2](https://github.com/mt2017-tartu-shared-task/nmt-system-B/blob/master/reports/milestone2.pdf)
 
 ## Final system
-- In order to address translation issues found after our manual evaluation we used Amazons sockeye library to train a system using context gates and instead of attention we used coverage, our bpe vocabulary size was 30k.
-- The trained system gave us __22.82__ BLEU points on the shared dev set that means __BIG__ over the baseline. 
+- In order to address translation issues found after our manual evaluation we used Amazons sockeye library to train a system using context gates and instead of attention we used coverage, our bpe vocabulary size was 30k. For translation we used beam size 10.
+- The trained system gave us __22.89__ BLEU points on the shared dev set that means __BIG__ increase over the baseline. 
 
 More details: [report3](https://github.com/mt2017-tartu-shared-task/nmt-system-B/blob/master/reports/milestone3.pdf) and [report4](https://github.com/mt2017-tartu-shared-task/nmt-system-B/blob/master/reports/milestone4.pdf)
 
@@ -52,12 +52,15 @@ Do not forget to check our poster: [__POSTER_LINK__]
 
 ## What we also tried or wanted to try
 We also tried replacing all dots except last with special symbols and various beam sizes.<br>
-The dot replacement gave __22.29__ BLEU points on shared dev set and actually helped with translations. Below is a translation with this approach on same example as seen previously.
+The dot replacement gave __22.29__ BLEU points on shared dev set and actually helped with translations. Below is a translation with this approach.
+ - Baseline: This part of our website will find information on how Parliament will organise its work through the various committees .
  - Dot-model: This section of our website will find information on how Parliament operates
 its work through a system of various committees , and the work of the
 European Parliament is therefore important because decisions on new
 European laws are jointly made by the Parliament and the Council of
 Ministers .<br>
+Also we tried 40k vocabulary for coverage + context to tackle some words not translated correctly (bigger voc should cover more words), however the results got worse based on manual evaluation and BLEU, last was only __21.31__.
+Finally we tried different beam sizes for translation and bigger beam size gave slightly better results based on manual evaluation and BLEU, which also increased by little.
 
 Lastly, we wanted to try hyperparameter tuning, however the model did not converge. There were too many hyperparameter to tune to really find out which value suits what parameter is good. Furthermore we wanted to try POS-tags and ensembling multiple models.<br>
 
