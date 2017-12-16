@@ -22,7 +22,7 @@ More details: [report1](https://github.com/mt2017-tartu-shared-task/nmt-system-B
 
 ## Baseline system manual evaluation
 - We manually analyzed __60__ baseline translations. 
-- Or main observation was that __a lot of sentences lacked fluency. Often in a long sentence a part of the sentence lacked fluency or was completely nonsensical. (REMOVE THIS?:many words in sentences were not translated, especially in case of long sentences or after dot).__ // _put here only the problem(s) you actually put the most effort to_
+- Or main observation was that __a lot of sentences lacked fluency. Often in a long sentence a part of the sentence lacked fluency or was completely nonsensical.__
 - Take a look at the motivating example __1__ produced by baseline system:
   1. Human: "__The biggest forest owners ( state , local governments and some private forestry companies , owning thousands of hectares of forest areas ) can ensure a continuous process of production throughout the long forest management cycle .__"
   2. Baseline: "__The largest forest owners ( the country , local authorities and some of the private sector companies to whom thousands of hectares of forest land ) can be guaranteed throughout the long term management cycle .__"
