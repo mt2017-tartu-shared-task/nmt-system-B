@@ -35,7 +35,7 @@ More details: [report2](https://github.com/mt2017-tartu-shared-task/nmt-system-B
 
 ## Final system
 - In order to address translation issues found after our manual evaluation we used Amazons sockeye library to train a system using context gates and instead of attention we used coverage, our bpe vocabulary size was 30k. For translation we used beam size 10.
-- The trained system gave us __22.89__ BLEU points on the shared dev set that means __BIG__ increase over the baseline. 
+- The trained system gave us __22.89__ BLEU points on the shared dev set that means __SMALL__ increase over the baseline. 
 
 More details: [report3](https://github.com/mt2017-tartu-shared-task/nmt-system-B/blob/master/reports/milestone3.pdf) and [report4](https://github.com/mt2017-tartu-shared-task/nmt-system-B/blob/master/reports/milestone4.pdf)
 
