@@ -48,7 +48,7 @@ More details: [report3](https://github.com/mt2017-tartu-shared-task/nmt-system-B
   1. Final system: "__The European Union was set up to put an end to the frequent bloody wars between neighbours , the culmination of which became the Second World War .__"
 - Here you can see that although the sentence structure is changed, it is completely fluent and adequate.
 
-Do not forget to check our poster: [__POSTER_LINK__]
+Do not forget to check our poster: [Poster](reports/poster.pdf)
 
 ## What we also tried or wanted to try
 We also tried replacing all dots except last with special symbols and various beam sizes.<br>
