@@ -68,9 +68,9 @@ Lastly, we wanted to try hyperparameter tuning, however the model did not conver
 
 
 ## Final words
-- __1st_sentence: your_results_on_the_test_set_and_interpretation_(fill_later)__
-- __We had issues with models training rather long - especially for OpenNMT, Sockeye was much faster. Queue times were sometimes really long, especially at the ending part of semester.__
-- __We learnt that in order to train great model, it needs much analysing, trying, evaluating.__
+- On final test set we got 25.66 BLEU score. The translations were mostly quite fluent and adequate, nevertheless sometimes the meaning got lost, some words were repeated or there were mistranslations. Example : "China has just refused the sale of human organs and restricting the possibility of obtaining sirens from foreigners." (ID: 250). Instead of "sirens" there should be "transplants", otherwise great translation. 
+- We had issues with models training rather long - especially for OpenNMT, Sockeye was much faster. Queue times were sometimes really long, especially at the ending part of semester.
+- We learnt that in order to train great model, it needs much analysing, trying, evaluating.
 
 
 ## Team members:
